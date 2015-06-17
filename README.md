@@ -10,11 +10,17 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 and the zip file unzipped and the following files need to be copied to the R working directory where the run_analysis.R script resides.
 
 subject_train.txt
+
 X_train.txt
+
 y_train.txt
+
 subject_test.txt
+
 X_test.txt
+
 y_test.txt
+
 features.txt
 
 In this order the "run_analysis.R" script:-
