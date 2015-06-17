@@ -1,5 +1,6 @@
 ## Project Description
-This CodeBook describes 
+This CodeBook describes
+
 a) the raw data
 
 b) the choices made in processing the raw data
