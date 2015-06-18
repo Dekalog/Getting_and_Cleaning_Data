@@ -1,4 +1,4 @@
-## Project Description
+## CodeBook
 This CodeBook describes
 
 a) the raw data
@@ -200,37 +200,37 @@ which are decribed in the next section.
 ### Variable descriptions of data in "all_means.txt"
 In the variable descriptions of the data that follow, taking for example "3 tBodyAcc.mean().X -> ...... "
 
- - the integer 3 is the absolute column index value, i.e. the third column
+the integer 3 is the absolute column index value, i.e. the third column
  
- - the character string "tBodyAcc.mean().X" is the description of the raw data value measurement and also the column label of the data. This description is parsed as follows:-
+the character string "tBodyAcc.mean().X" is the description of the raw data value measurement and also the column label of the data. This description is parsed as follows:-
 
-prefix 't' denotes time domain signals captured at a constant rate of 50 Hz, filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise
+ - prefix 't' denotes time domain signals captured at a constant rate of 50 Hz, filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise
 
-prefix 'f' denotes frequency domain signals captured by a Fast Fourier Transform (FFT) of the time domain signal
+ - prefix 'f' denotes frequency domain signals captured by a Fast Fourier Transform (FFT) of the time domain signal
 
-Body denotes body signals derived and separated out from time domain signals
+ - Body denotes body signals derived and separated out from time domain signals
 
-Gravity denotes gravity signals derived and separated out from time domain signals
+ - Gravity denotes gravity signals derived and separated out from time domain signals
 
-Acc denotes acceleration signals derived from time domain signals
+ - Acc denotes acceleration signals derived from time domain signals
 
-Gyro denotes gyroscopic signals derived from time domain signals
+ - Gyro denotes gyroscopic signals derived from time domain signals
 
-Jerk denotes Jerk signals derived from linear acceleration and angular velocity of time domain signals
+ - Jerk denotes Jerk signals derived from linear acceleration and angular velocity of time domain signals
 
-Mag denotes the three-dimensional Euclidean norm magnitude of signals
+ - Mag denotes the three-dimensional Euclidean norm magnitude of signals
 
-X Y and Z denote the separate directions of the 3-axial raw signals
+ - X Y and Z denote the separate directions of the 3-axial raw signals
 
-mean() denotes that a mean was used in the signal calculation
+ - mean() denotes that a mean was used in the signal calculation
 
-std() denotes that a standard deviation was used in the signal calculation
+ - std() denotes that a standard deviation was used in the signal calculation
 
 so taking the "3 tBodyAcc.mean().X -> ...... " example, this is read as
 
 "the third column contains a time domain signal of the body accelaration in the X direction, and the underlying raw data was calculated using a mean() value"
 
- - the character string that follows the "->" is the description of the class and value contained in the respective columns
+the character string that follows the ">>>" is the description of the class and value contained in the respective columns
  
 IMPORTANT NOTE!
 The variable descriptions/column labels are kept the same as in the raw data text files for the sake of consistancy, and to identify which raw data measurement is being averaged for this assignment. However, the actual numeric values in columns 3 to 68 inclusive are NOT these raw values but the grouped means as returned by the "aggregate" function in R. 
@@ -239,134 +239,134 @@ The variable descriptions/column labels are kept the same as in the raw data tex
 
 2 activity >>> a factor value with six levels, Levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS to indicate which activity the subsequent grouped means columns ( columns 3 to 68 inclusive ) are aggregate means of, per subject in column no.1 above 
 
-3 tBodyAcc.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+3 tBodyAcc.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-4 tBodyAcc.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+4 tBodyAcc.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-5 tBodyAcc.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+5 tBodyAcc.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-6 tBodyAcc.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+6 tBodyAcc.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-7 tBodyAcc.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+7 tBodyAcc.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-8 tBodyAcc.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+8 tBodyAcc.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-9 tGravityAcc.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+9 tGravityAcc.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-10 tGravityAcc.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+10 tGravityAcc.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-11 tGravityAcc.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+11 tGravityAcc.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-12 tGravityAcc.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+12 tGravityAcc.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-13 tGravityAcc.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+13 tGravityAcc.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-14 tGravityAcc.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+14 tGravityAcc.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-15 tBodyAccJerk.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+15 tBodyAccJerk.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-16 tBodyAccJerk.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+16 tBodyAccJerk.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-17 tBodyAccJerk.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+17 tBodyAccJerk.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-18 tBodyAccJerk.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+18 tBodyAccJerk.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-19 tBodyAccJerk.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+19 tBodyAccJerk.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-20 tBodyAccJerk.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+20 tBodyAccJerk.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-21 tBodyGyro.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+21 tBodyGyro.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-22 tBodyGyro.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+22 tBodyGyro.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-23 tBodyGyro.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+23 tBodyGyro.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-24 tBodyGyro.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+24 tBodyGyro.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-25 tBodyGyro.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+25 tBodyGyro.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-26 tBodyGyro.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+26 tBodyGyro.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-27 tBodyGyroJerk.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+27 tBodyGyroJerk.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-28 tBodyGyroJerk.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+28 tBodyGyroJerk.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-29 tBodyGyroJerk.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+29 tBodyGyroJerk.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-30 tBodyGyroJerk.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+30 tBodyGyroJerk.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-31 tBodyGyroJerk.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+31 tBodyGyroJerk.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-32 tBodyGyroJerk.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+32 tBodyGyroJerk.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-33 tBodyAccMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+33 tBodyAccMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-34 tBodyAccMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+34 tBodyAccMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-35 tGravityAccMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+35 tGravityAccMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-36 tGravityAccMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+36 tGravityAccMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-37 tBodyAccJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+37 tBodyAccJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-38 tBodyAccJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+38 tBodyAccJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-39 tBodyGyroMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+39 tBodyGyroMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-40 tBodyGyroMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+40 tBodyGyroMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-41 tBodyGyroJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+41 tBodyGyroJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-42 tBodyGyroJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+42 tBodyGyroJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-43 fBodyAcc.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+43 fBodyAcc.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-44 fBodyAcc.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+44 fBodyAcc.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-45 fBodyAcc.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+45 fBodyAcc.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-46 fBodyAcc.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+46 fBodyAcc.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-47 fBodyAcc.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+47 fBodyAcc.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-48 fBodyAcc.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+48 fBodyAcc.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-49 fBodyAccJerk.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+49 fBodyAccJerk.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-50 fBodyAccJerk.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+50 fBodyAccJerk.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-51 fBodyAccJerk.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+51 fBodyAccJerk.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-52 fBodyAccJerk.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+52 fBodyAccJerk.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-53 fBodyAccJerk.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+53 fBodyAccJerk.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-54 fBodyAccJerk.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+54 fBodyAccJerk.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-55 fBodyGyro.mean().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+55 fBodyGyro.mean().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-56 fBodyGyro.mean().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+56 fBodyGyro.mean().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-57 fBodyGyro.mean().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+57 fBodyGyro.mean().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-58 fBodyGyro.std().X >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+58 fBodyGyro.std().X >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-59 fBodyGyro.std().Y >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+59 fBodyGyro.std().Y >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-60 fBodyGyro.std().Z >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+60 fBodyGyro.std().Z >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-61 fBodyAccMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+61 fBodyAccMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-62 fBodyAccMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+62 fBodyAccMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-63 fBodyAccJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+63 fBodyAccJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-64 fBodyAccJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+64 fBodyAccJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-65 fBodyGyroMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+65 fBodyGyroMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-66 fBodyGyroMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+66 fBodyGyroMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-67 fBodyGyroJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+67 fBodyGyroJerkMag.mean() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
-68 fBodyGyroJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by all_means$subject and all_means$activity per row
+68 fBodyGyroJerkMag.std() >>> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
