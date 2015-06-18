@@ -59,12 +59,12 @@ tidy_raw_data <- arrange( raw_data , subject , activity )
 means <- aggregate( tidy_raw_data , list( tidy_raw_data$activity , tidy_raw_data$subject ) , FUN = mean )
 
 # replace the numbers, 1 to 6, in the means$activity column of means df with meaningful names from activity_labels.txt
-means$activity[ means$activity == 1 ] <- "WALKING"
-means$activity[ means$activity == 2 ] <- "WALKING_UPSTAIRS"
-means$activity[ means$activity == 3 ] <- "WALKING_DOWNSTAIRS"
-means$activity[ means$activity == 4 ] <- "SITTING"
-means$activity[ means$activity == 5 ] <- "STANDING"
-means$activity[ means$activity == 6 ] <- "LAYING"
+means$activity[ means$activity == 1 ] <- "walking"
+means$activity[ means$activity == 2 ] <- "walkingupstairs"
+means$activity[ means$activity == 3 ] <- "walkingdownstairs"
+means$activity[ means$activity == 4 ] <- "sitting"
+means$activity[ means$activity == 5 ] <- "standing"
+means$activity[ means$activity == 6 ] <- "laying"
 
 # drop the Group.1 and Group.2 columns that were added by the call to aggregate
 means <- select( means , -Group.1 , -Group.2 )

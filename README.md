@@ -41,7 +41,7 @@ In this order the "run_analysis.R" script:-
 
 8) the means of these ordered groups are then calculated, via the "aggregate" function, as per the task instruction no.5, and assigned to a data frame called "means."
 
-9) the activity labels in the "means" data frame, which at the momemt are 1 to 6 as described in the "activity_labels.txt" file, are then replaced with more meaningful labels such as WALKING, SITTING etc. and two unecessary columns added by the "aggregate" function are dropped.
+9) the activity labels in the "means" data frame, which at the momemt are 1 to 6 as described in the "activity_labels.txt" file, are then replaced with more meaningful labels such as walking, sitting etc. and two unecessary columns added by the "aggregate" function are dropped.
 
 10) the final result, the "means" data frame, is then printed to a file named "all_means.txt" via the "write.table" function as per the task instructions.
 
@@ -49,6 +49,6 @@ This final "all_means.txt" result is tidy data according to the principles of ti
 
 a) each variable is in its own column, i.e. the subjects are in the first coulmn, the activity in the second column, the first set of grouped means for the first variable in the raw data is in the third column etc. 
 
-b) each different grouped mean observation is in a different row, i.e. observations for subject no.1 and activity == WALKING are in the first row, subject no.1 and activity == WALKING_UPSTAIRS are in the second row etc.
+b) each different grouped mean observation is in a different row, i.e. observations for subject no.1 and activity == walking are in the first row, subject no.1 and activity == walkingupstairs are in the second row etc.
 
 c) the entire tidy data set is of one type of measurement - grouped means of the raw data - grouped by subject, activity and variable as described in a) and b) above. 

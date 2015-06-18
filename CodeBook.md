@@ -234,13 +234,13 @@ the description that follows the "->" is a description of the class and value co
  
 IMPORTANT NOTE!
 The variable descriptions/column labels are kept the same as in the raw data text files for the sake of consistency, and to identify which raw data measurement is being averaged for this assignment. However, the actual numeric values in columns 3 to 68 inclusive are NOT these raw values but the grouped means of these values as returned by the "aggregate" function in R. 
-Again taking the "3 tBodyAcc.mean().X -> ...... " example, if we take row 10 of the data frame it can be seen that the subject on row 10 in column 1 is the subect identified as "2" and the activity in column 2 is "SITTING," thus the value in row 10 column 3 is the mean of all the raw values in files "X_train.txt" and "X_test.txt" for subject 2 and activity == sitting
+Again taking the "3 tBodyAcc.mean().X -> ...... " example, if we take row 10 of the data frame it can be seen that the subject on row 10 in column 1 is the subect identified as "2" and the activity in column 2 is "sitting" thus the value in row 10 column 3 is the mean of all the raw values in files "X_train.txt" and "X_test.txt" for subject 2 and activity == sitting
 for the measurement of the "time domain signal of the body accelaration in the X direction, calculated with a mean."
 
 ### Column labels and contents
 1 subject -> an integer value from 1 to 30 to indicate individual subjects in the data
 
-2 activity -> a factor value with six levels, Levels: LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS to indicate which activity the subsequent grouped means columns ( columns 3 to 68 inclusive ) are aggregate means of, per subject in column no.1 above 
+2 activity -> a factor value with six levels, Levels: laying sitting standing walking walkingdownstairs walkingupstairs to indicate which activity the subsequent grouped means columns ( columns 3 to 68 inclusive ) are aggregate means of, per subject in column no.1 above 
 
 3 tBodyAcc.mean().X -> a numeric value of grouped means for this column variable grouped by subject and activity from columns 1 and 2
 
