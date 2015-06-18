@@ -233,7 +233,7 @@ so taking the "3 tBodyAcc.mean().X -> ...... " example, this is read as
 the description that follows the "->" is a description of the class and value contained in the respective columns
  
 IMPORTANT NOTE!
-The variable descriptions/column labels are kept the same as in the raw data text files for the sake of consistency, and to identify which raw data measurement is being averaged for this assignment. However, the actual numeric values in columns 3 to 68 inclusive are NOT these raw values but the grouped means as returned by the "aggregate" function in R. 
+The variable descriptions/column labels are kept the same as in the raw data text files for the sake of consistency, and to identify which raw data measurement is being averaged for this assignment. However, the actual numeric values in columns 3 to 68 inclusive are NOT these raw values but the grouped means of these values as returned by the "aggregate" function in R. 
  
 1 subject -> an integer value from 1 to 30 to indicate individual subjects in the data
 
